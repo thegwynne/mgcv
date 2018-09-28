@@ -1,0 +1,153 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Matthew}{Gwynne}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{Flat 26 Ashburne House}{Oxford Place}{Manchester, M14 5SF}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{07454 860323}                   % optional, remove / comment the line if not wanted
+\email{thegwynne@gmail.com}                               % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cvitem{2015--present}{Postgraduate Studies in Mathematics, \emph{University of Manchester} (not completed)}
+       \cvitem{}{Working with an engineering company developing software to analyze expected vibration in buildings.}  % arguments 3 to 6 can be left empty
+       \cvitem{2010--2014}{Masters of Mathematics, \emph{University of York}}
+       \cvitem{}{\textit{First Class Honours}}
+       \cvitem{}{Masters Dissertation: An Introduction to Bosonic String Theory}
+       \cvitem{}{Modules focusing on applied mathematics and mathematical physics}
+       \cvitem{2008--2010}{A Levels, \emph{Bishops' Bluecoat High School Sixth Form}}
+       \cvitem{}{A* Mathematics, A* Further Mathematics, A Chemistry, A Physics}
+       \cvitem{2003--2008}{GCSEs, \emph{Bishops' Bluecoat High School}}
+       \cvitem{}{12 A*-C}
+       
+\section{Work Experience}
+\cventry{2015--present}{Industrial Sponsor for PhD programme}{Arup}{Manchester}{}{}%
+\cvitem{}{
+\begin{itemize}%
+\item Worked with Arup's Oasys software group members in Manchester and London,
+\item Met with engineers from different disciplines to learn how they use vibration analysis, and discuss what improvements would be most valuable to them,
+\item Constructed fully documented code to solve the Quadratic Eigenvalue Problem in \texttt{MATLAB},
+  \item The code I developed is likely to be integrated into their structural analysis package later in the year.
+\end{itemize}}
+\cventry{Summer 2013}{Summer Placement}{Met Office}{Exeter}{}{}
+\cvitem{}
+    {
+      \begin{itemize}        
+      \item Developed a python module to compute \emph{Rossby Wave Source (RWS)}, a parameter of climate data, from meteorological datasets,
+        \item Combined techniques from existing IDL code with novel algorithms to improve speed and utility,
+    \item Presented mid-projects results at a group meeting.
+    \end{itemize}
+    }
+\cventry{Summer 2009}{Nuffield Bursary Project}{QUASAR Group}{Cockroft Institute}{}{\begin{itemize}\item Completed four week project using finite element modelling software \item Shortlisted for an award at scheme poster presentation\end{itemize}}
+
+\section{Training, Skills and Courses}
+\subsection{Computing}
+\cvitem{}{\begin{itemize}
+  \item Scientific Computing MSC module at the University of Manchester, which included writing code in C++
+  \item Introduction to Python, and Introduction to IDL courses at the Met Office
+  \item Research in the last 3 years has primarily involved coding in \texttt{MATLAB}, as well as some work in Python and C++.
+  \item Work at the Met Office was mostly conducted using python, as well as reading legacy IDL code.
+    \item Personal coding projects are mostly completed in python, inluding election forecasting models, although for projects involving 3D graphics I tend to use C\# with the XNA package.
+    \end{itemize}
+}
+\subsection{Other}
+\cvitem{2015--2017}{Secretary of Manchester SIAM-IMA Student Chapter}
+\cvitem{}{This was a postgraduate student society sponsored by the Society for Industrial and Applied Mathematics (SIAM) and the Institude of Mathematics and its Applications (IMA) to run events at the University of Manchester}
+\cvitem{}{As secretary, my responsibilities included communications between members and committee, helping to plan and run events, and providing details of our operations to SIAM}
+\cvitem{January 2017}{Presented a poster presentation at the SIAM UKIE Annual Meeting at the University of Strathclyde,}
+\cvitem{September 2016}{Presented a talk at the 5th IMA Conference on Numerical Linear Algebra and Optimisation at the University of Birmingham,}
+\cvitem{June 2016}{Completed the Graduate Teaching Assistant Training one day course at the University of Manchester.}
+
+\section{Voluntary and Casual Work}
+\cvitem{2015--present}{Holy Trinity Platt Church. Active volunteer in a number of areas, including in technical and support areas such as:
+  \begin{itemize}
+  \item Running the projection desk for services and meetings.
+  \item Sound engineer for services and meetings,
+  \item Events, Hospitality and Catering (including head caterer role),
+  \item Wedding Verger (Paid casual work) Caretake for the church on the day of the wedding,
+    \item Working with International Students to help them develop their English language skills, and help them learn about British culture.
+  \end{itemize}
+}
+\end{document}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{January 01, 1984}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+Albert Einstein discovered that $e=mc^2$ in 1905.
+
+\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
